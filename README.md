@@ -1,4 +1,4 @@
-# Experiment-02-Introduction-to-Roboanalyzer-
+# Experiment-04-Introduction-to-Roboanalyzer-
 ## AIM: 
 To Design & simulate an environment for pick & place operations with Industrial Robot using Robo DK software
 ### COMPONENTS REQUIRED:
@@ -47,7 +47,7 @@ Double click the robot to show the robot panel Select Paint gun as the Tool Fram
 
 Rename the first target as Home by pressing F2. Alternatively, select ToolsRename item. Move the robot closer to one edge of the part (by dragging the tool using the Alt key, entering coordinates or jogging the axis manually). Select Program Teach Target (Ctrl+T) or the appropriate button in the toolbar to create a new target Rename the target to Approach as shown in step 7 Select the Home target and the Approach target alternatively to see the robot moving between the two targets Right click the target and select Teach Current Position (Alt+double click) if a different position needs to be recorded for one of the targets Right click the target and select Target Options… (F3) to open the target options window shown in the next image
 
-PROGRAM :
+
 	 
 	 
 	 
@@ -55,7 +55,7 @@ PROGRAM :
 
 
 ### PROGRAM 
- 
+ ```
  import sys
 import os
 sys.path.append(os.path.abspath(r"""E:/RoboDK/Posts/""")) # temporarily add path to POSTS folder
@@ -100,7 +100,7 @@ r.MoveJ(p(25.497,-57.3097,200.657,-90,-0.000220614,180),[32.8573,-74.9724,-134.4
 
 raise Exception("""Your license does not allow generating programs with more than 50 lines of code. Upgrade your license to unlock this feature.""")
  
- 
+``` 
  
  ## SIMULATION:
  ![image](https://github.com/VarshaAjith1110/Experiment-02--Design-simulate-an-environment-for-pick-place-operations-with-Industrial-Robot-us/assets/94222288/e17e3f42-bda9-442c-8aa3-7dffd00b4fb5)
